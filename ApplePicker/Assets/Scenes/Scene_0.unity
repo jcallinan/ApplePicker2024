@@ -268,8 +268,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -293,7 +293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -306,9 +306,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4381672603341133064, guid: 02302461aed06df4c80549cd8d0446e7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4381672604034880057, guid: 02302461aed06df4c80549cd8d0446e7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4381672605263575948, guid: 02302461aed06df4c80549cd8d0446e7, type: 3}
       propertyPath: m_Name
       value: AppleTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 4381672605263575948, guid: 02302461aed06df4c80549cd8d0446e7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4381672605263575949, guid: 02302461aed06df4c80549cd8d0446e7, type: 3}
       propertyPath: m_RootOrder
@@ -354,5 +366,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4381672605263575950, guid: 02302461aed06df4c80549cd8d0446e7, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02302461aed06df4c80549cd8d0446e7, type: 3}
+--- !u!1 &4381672604554803145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4381672605263575948, guid: 02302461aed06df4c80549cd8d0446e7, type: 3}
+  m_PrefabInstance: {fileID: 4381672604554803144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4381672604554803146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4381672604554803145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f8fd4ac1715f142aa7954360c75200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 2930315714359304558, guid: 4c5686a77d252ba41a782b37f012fe39, type: 3}
+  speed: 1
+  leftAndRightEdge: 10
+  changeDirChance: 0.1
+  appleDropDelay: 1
